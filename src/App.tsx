@@ -8,6 +8,8 @@ import SpinnerIcon from "./assets/icons/spinner.svg?react";
 import XIcon from "./assets/icons/x.svg?react";
 import PlusIcon from "./assets/icons/plus.svg?react";
 
+import Badge from "./components/Badge";
+
 function App() {
   return (
     <div className="flex flex-col gab-2">
@@ -27,6 +29,12 @@ function App() {
         <Icon svg={SpinnerIcon} className="fill-pink-dark" animate />
         <Icon svg={XIcon} className="fill-pink-dark" />
         <Icon svg={PlusIcon} className="fill-pink-dark" />
+      </div>
+
+      <div className="flex gap-1">
+        <Badge variant="primary" size="sm">
+          2 de 5
+        </Badge>
       </div>
     </div>
   );
